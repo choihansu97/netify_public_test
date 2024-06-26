@@ -6,7 +6,7 @@ function MobileSection2() {
             id: 1,
             title: "디자이너를 채용 사례",
             case: "# CASE 01",
-            img: "/public/img/logo/logo1.png",
+            img: "/img/logo/logo1.png",
             headline: "이건 이래서 안되고 저건 저래서 안된다는데....",
             description: "디자이너 한명 채용하면 다 될줄 알았는데, 디자이너마다 전문 업무 분야가 따로 있대요. 이건 이래서, 저건 저래서 안된다고 하시는데 어떡하죠?"
         },
@@ -14,7 +14,7 @@ function MobileSection2() {
             id: 2,
             title: "프리랜서 플랫폼 이용 사례",
             case: "# CASE 02",
-            img: "/public/img/logo/logo2.png",
+            img: "/img/logo/logo2.png",
             headline: "바로바로 수정하고 싶은데, 소통이 힘들어요...",
             description: "오늘 내로 수정본을 빠르게 받을 순 없는걸까요? 급하게 수정을 요청드리긴 했지만, 프리랜서 디자이너님의 업무 일정에 맞추어야 해서 답답해요."
         },
@@ -22,7 +22,7 @@ function MobileSection2() {
             id: 3,
             title: "디자인 대행사 이용 사례",
             case: "# CASE 03",
-            img: "/public/img/logo/logo3.png",
+            img: "/img/logo/logo3.png",
             headline: "데일리한 업무를 맡기기에는 프로젝트 당 비용이 부담돼요",
             description: "매일매일 맡기고 싶은 데일리 업무가 있는데 대행사를 이용하기엔 적합하지 않다고 느껴져요. 그렇다고 프로젝트 당 업무를 맡기자니 비용이 부담되구요."
         },
@@ -30,7 +30,7 @@ function MobileSection2() {
             id: 4,
             title: "타 구독 서비스 이용 사례",
             case: "# CASE 04",
-            img: "/public/img/logo/logo4.png",
+            img: "/img/logo/logo4.png",
             headline: "우리 기업을 좀 더 신경써주면 좋을텐데 아쉬워요",
             description: "디자이너가 우리 기업 업무만 맡고 있지 않은 것 같아요. 저희 업무를 담당할 때 좀 더 신경써서 작업해주셨으면 좋겠는데 어딘지 모르게 아쉬운 느낌이에요."
         }

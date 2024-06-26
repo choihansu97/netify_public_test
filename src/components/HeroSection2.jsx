@@ -14,7 +14,7 @@ function HeroSection2() {
         <article className="flex flex-col flex-wrap items-start content-start gap-5 w-[1200px] h-[376px] mt-[32px]">
           <div className="flex flex-col justify-center items-start p-6 gap-5 w-[285px] h-[376px] bg-[#FFFFFF] rounded-[20px] flex-grow order-1 flex-none">
             <img
-              src="/public/img/logo/logo1.png"
+              src="/img/logo/logo1.png"
               alt="logo1"
               className="w-[100px] h-[100px] rounded-[50px] flex-none order-0 flex-grow-0"
             />
@@ -46,7 +46,7 @@ function HeroSection2() {
           </div>
           <div className="flex flex-col justify-center items-start p-6 gap-5 w-[285px] h-[376px] bg-[#FFFFFF] rounded-[20px] flex-grow order-1 flex-none">
             <img
-              src="/public/img/logo/logo2.png"
+              src="/img/logo/logo2.png"
               alt="logo1"
               className="w-[100px] h-[100px] rounded-[50px] flex-none order-0 flex-grow-0"
             />
@@ -78,7 +78,7 @@ function HeroSection2() {
           </div>
           <div className="flex flex-col justify-center items-start p-6 gap-5 w-[285px] h-[376px] bg-[#FFFFFF] rounded-[20px] flex-grow order-1 flex-none">
             <img
-              src="/public/img/logo/logo3.png"
+              src="/img/logo/logo3.png"
               alt="logo1"
               className="w-[100px] h-[100px] rounded-[50px] flex-none order-0 flex-grow-0"
             />
@@ -109,7 +109,7 @@ function HeroSection2() {
           </div>
           <div className="flex flex-col justify-center items-start p-6 gap-5 w-[285px] h-[376px] bg-[#FFFFFF] rounded-[20px] flex-grow order-1 flex-none">
             <img
-              src="/public/img/logo/logo4.png"
+              src="/img/logo/logo4.png"
               alt="logo1"
               className="w-[100px] h-[100px] rounded-[50px] flex-none order-0 flex-grow-0"
             />
