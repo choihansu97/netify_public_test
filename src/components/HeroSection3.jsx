@@ -80,7 +80,7 @@ function HeroSection3() {
           </div>
         </div>
         <div className="mt-[56px] flex items-center justify-between">
-          <div className="section3-box flex h-[500px] w-[640px] flex-col items-center justify-center gap-y-2 rounded-[20px] bg-[#1F2340] px-[150.64px] py-[63.51px] shadow-section3-box-shadow">
+          <div className="flex h-[500px] w-[640px] flex-col items-center justify-center gap-y-2 rounded-[20px] bg-[#1F2340] px-[150.64px] py-[63.51px] shadow-section3-box-shadow section3-box">
             {steps.map((step, index) => (
               <div
                 key={index}

@@ -75,13 +75,13 @@ function MobileSection3() {
           slidesPerView={1}
           className="mt-6 w-full"
           autoplay={{ delay: 2000 }}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, el: '.custom-pagination' }}
           modules={[Autoplay, Pagination]}
         >
           {steps.map((step, index) => (
             <SwiperSlide key={index}>
               <div className="mx-auto max-w-[500px]">
-                <div className="section3-box h-[300px] rounded-[20px] py-7 shadow-section3-box-shadow">
+                <div className="h-[300px] rounded-[20px] py-7 shadow-section3-box-shadow section3-box">
                   {steps.slice(0, index + 1).map((s, idx) => (
                     <div
                       key={idx}
@@ -101,7 +101,7 @@ function MobileSection3() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 flex w-full flex-col items-start justify-start gap-2 pb-10">
+                <div className="my-6 flex w-full flex-col items-start justify-start gap-2">
                   <div className="w-full gap-4">
                     <div className="w-full gap-1">
                       <p className="text-center font-suit text-[20px] font-bold leading-[30px] text-[#FFFFFF]">
@@ -117,6 +117,7 @@ function MobileSection3() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="custom-pagination flex justify-center gap-1"></div>
       </div>
     </section>
   );

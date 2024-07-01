@@ -1,11 +1,11 @@
+import { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import 'swiper/css';
-import 'swiper/css/autoplay';
-
 function HeroSection13() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const logos = [
     { src: '/img/logo/brand-logo1.png', alt: 'brand-logo1', width: 180 },
     { src: '/img/logo/brand-logo2.png', alt: 'brand-logo2', width: 153 },
@@ -58,7 +58,7 @@ function HeroSection13() {
           </span>
           해주셨어요.{' '}
           <span className="font-bold">
-            도대체 어떻게 디자이너 풀을
+            도대체 어떻게 디 자이너 풀을
             <br />
             관리하시길래 이렇게 잘해주시는 건지...
           </span>
@@ -74,7 +74,7 @@ function HeroSection13() {
           디자이너님을 채용할 때 가장 어려운 점은 직접 일을
           <br /> 해보지 않으면 모른다는 점이었어요. 채용 시에
           <br /> 디자이너님이 저희와 안맞는 경우가 있어도, 인원을
-          <br /> 정리하기가 어려울 떄가 있는데{' '}
+          <br /> 정리하기가 어려울 때가 있는데{' '}
           <span className="font-bold">
             디자이너하이어 구독은
             <br /> 디자이너를 필요할 때 언제든 교체 가능하다는 옵션
@@ -93,10 +93,10 @@ function HeroSection13() {
       content: (
         <>
           저희는 상세페이지를 많이 필요로 하는 기업이에요.
-          <br /> 인테리어 소품이나 오브제 등을 판매하다보니 감성적인
+          <br /> 인테리어 소품이나 오브제 등을 판매하다 보니 감성적인
           <br />
           상세페이지가 주로 필요한데, 한번 배정된 디자이너님과
-          <br /> 오래 작업을 하다보니{' '}
+          <br /> 오래 작업을 하다 보니{' '}
           <span className="font-bold">
             하나하나 오더드리지 않아도 저희
             <br /> 취향을 파악
@@ -143,9 +143,18 @@ function HeroSection13() {
     cssEase: 'linear',
     pauseOnHover: true,
     adaptiveHeight: true,
-    centerMode: false,
+    centerMode: true,
     variableWidth: true,
     arrows: false,
+    beforeChange: (current, next) => {
+      let newSlide = next;
+      if (next < 0) {
+        newSlide = testimonials.length - 1;
+      } else if (next >= testimonials.length) {
+        newSlide = 0;
+      }
+      setCurrentSlide(newSlide);
+    },
   };
 
   return (
@@ -193,28 +202,39 @@ function HeroSection13() {
         </div>
 
         <div className="mt-[64px] w-[1440px] overflow-hidden">
-          <Slider {...settings2} className="ml-[120px] w-[1320px]">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="w-[387px] pl-[20px]">
-                <div className="group relative">
-                  <div className="absolute inset-0 rounded-[20px] bg-transparent opacity-0 transition-all duration-300 group-hover:bg-section13-gradient-border group-hover:opacity-100"></div>
-                  <div className="absolute inset-[1px] rounded-[19px] bg-[#131733]"></div>
-                  <div className="relative z-10 h-[380px] w-[387px] rounded-[20px] bg-[#FFFFFF33] px-[24px] pb-[32px] pt-[48px]">
-                    <div className="h-[85px] w-[300px] gap-1">
-                      <h5 className="whitespace-pre-line text-left font-suit text-[20px] font-bold leading-[30px] tracking-[-0.02em] text-[#FFFFFF]">
-                        {testimonial.title}
-                      </h5>
-                      <p className="text-left font-suit text-[14px] font-normal leading-[21px] tracking-[-0.02em] text-[#FFFFFFCC]">
-                        {testimonial.company}
+          <Slider {...settings2} className="w-[1440px]">
+            {testimonials.map((testimonial, index) => {
+              const isCenter =
+                Math.abs(currentSlide - index) <= 1 ||
+                Math.abs(currentSlide - index + testimonials.length) <= 1 ||
+                Math.abs(currentSlide - index - testimonials.length) <= 1;
+              return (
+                <div
+                  key={index}
+                  className={`w-[387px] pl-[20px] transition-opacity duration-500 ${
+                    isCenter ? 'opacity-100' : 'opacity-50'
+                  }`}
+                >
+                  <div className="group relative">
+                    <div className="absolute inset-0 rounded-[20px] bg-transparent opacity-0 transition-all duration-300 group-hover:bg-section13-gradient-border group-hover:opacity-100"></div>
+                    <div className="absolute inset-[1px] rounded-[19px] bg-[#131733]"></div>
+                    <div className="relative z-10 h-[380px] w-[387px] rounded-[20px] bg-[#FFFFFF33] px-[24px] pb-[32px] pt-[48px]">
+                      <div className="h-[85px] w-[300px] gap-1">
+                        <h5 className="whitespace-pre-line text-left font-suit text-[20px] font-bold leading-[30px] tracking-[-0.02em] text-[#FFFFFF]">
+                          {testimonial.title}
+                        </h5>
+                        <p className="text-left font-suit text-[14px] font-normal leading-[21px] tracking-[-0.02em] text-[#FFFFFFCC]">
+                          {testimonial.company}
+                        </p>
+                      </div>
+                      <p className="mt-[33px] text-wrap text-left font-suit text-[16px] font-normal leading-[25.6px] tracking-[-0.02em] text-[#FFFFFFE5]">
+                        {testimonial.content}
                       </p>
                     </div>
-                    <p className="mt-[33px] text-wrap text-left font-suit text-[16px] font-normal leading-[25.6px] tracking-[-0.02em] text-[#FFFFFFE5]">
-                      {testimonial.content}
-                    </p>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </Slider>
         </div>
       </div>

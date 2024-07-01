@@ -13,7 +13,7 @@ function HeroSection() {
           <p className="font-suit text-[20px] font-normal leading-[1.6] tracking-[-0.02em] text-white text-opacity-90">
             우리 기업에 딱! 맞는
             <span className="font-suit text-[20px] font-bold leading-[32px] tracking-[-0.02em] text-white text-opacity-90">
-              실력있고 성실한 전담 디자이너
+              &nbsp;실력있고 성실한 전담 디자이너
             </span>
             를
             <br />

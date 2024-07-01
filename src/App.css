@@ -9,3 +9,11 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
+.custom-pagination .swiper-pagination-bullet {
+    @apply bg-pagination-bullet opacity-pagination-bullet;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    @apply bg-pagination-bullet-active;
+}

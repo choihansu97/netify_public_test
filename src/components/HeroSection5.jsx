@@ -10,12 +10,12 @@ function HeroSection5() {
           </span>
         </h2>
         <div className="flex h-[50px] w-[328px] items-center gap-2">
-          <button className="h-[50px] w-[172px] whitespace-nowrap bg-[#FFFFFF] px-6 py-3">
+          <button className="h-[50px] w-[172px] whitespace-nowrap rounded-lg bg-[#FFFFFF] px-6 py-3">
             <p className="bg-section5-gradient-text bg-clip-text text-left font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-section5-gradient-text">
               지금 바로 구독하기
             </p>
           </button>
-          <button className="h-[50px] w-[148px] whitespace-nowrap bg-[#FFFFFF33] px-6 py-3">
+          <button className="h-[50px] w-[148px] whitespace-nowrap rounded-lg bg-[#FFFFFF33] px-6 py-3">
             <p className="text-left font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-[#FFFFFF]">
               24시 즉시 상담
             </p>
