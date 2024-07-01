@@ -1,19 +1,19 @@
 function HeroSection9() {
   return (
-    <section className="w-full h-full bg-white">
-      <div className="h-[574px] w-[1440px] mx-auto flex justify-between items-start px-[120px] py-[120px]">
-        <div className="w-[590px] h-[188px] gap-6 flex flex-col justify-start items-start pt-[40px]">
-          <div className="w-[590px] h-[100px] gap-2">
-            <p className="font-suit font-semibold text-[20px] leading-[32px] tracking-[-0.02em] text-left text-[#00000099]">
+    <section className="h-full w-full bg-white">
+      <div className="mx-auto flex h-[574px] w-[1440px] items-start justify-between px-[120px] py-[120px]">
+        <div className="flex h-[188px] w-[590px] flex-col items-start justify-start gap-6 pt-[40px]">
+          <div className="h-[100px] w-[590px] gap-2">
+            <p className="text-left font-suit text-[20px] font-semibold leading-[32px] tracking-[-0.02em] text-[#00000099]">
               디자이너님이 잘 집중하고 계신 걸까요?
             </p>
-            <h3 className="font-suit font-semibold text-[40px] leading-[60px] tracking-[-0.02em] text-left text-[#000000E5]">
+            <h3 className="text-left font-suit text-[40px] font-semibold leading-[60px] tracking-[-0.02em] text-[#000000E5]">
               월간 업무 보고서로 확인하는 근무 환경
             </h3>
           </div>
-          <pre className="font-suit font-normal text-[20px] leading-[32px] tracking-[-0.02em] text-left text-[#000000CC]">
-            월 1회 디자이너의 업무 환경을 트래킹한{" "}
-            <span className="font-suit font-bold text-[20px] leading-[32px] tracking-[-0.02em] text-left text-[#000000CC]">
+          <pre className="text-left font-suit text-[20px] font-normal leading-[32px] tracking-[-0.02em] text-[#000000CC]">
+            월 1회 디자이너의 업무 환경을 트래킹한{' '}
+            <span className="text-left font-suit text-[20px] font-bold leading-[32px] tracking-[-0.02em] text-[#000000CC]">
               보고서를 이메일로 전송
             </span>
             해 드립니다.
@@ -24,7 +24,7 @@ function HeroSection9() {
         <img
           src="/img/box/section9-box1.png"
           alt="section9-box1"
-          className="w-[480px] h-[334px]"
+          className="h-[334px] w-[480px]"
         />
       </div>
     </section>

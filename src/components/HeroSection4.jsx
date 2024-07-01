@@ -1,7 +1,7 @@
 function HeroSection4() {
   return (
-    <section className="w-full h-full bg-white">
-      <div className="w-[1440px] h-[812px] mx-auto flex flex-col px-[120px] py-[96px]">
+    <section className="h-full w-full bg-white">
+      <div className="mx-auto flex h-[812px] w-[1440px] flex-col px-[120px] py-[96px]">
         <div className="flex flex-col items-start gap-2">
           <p className="text-left font-suit text-[20px] font-medium tracking-[-0.02em] text-[#000000CC]">
             어떻게 가능한가요?
@@ -12,13 +12,13 @@ function HeroSection4() {
             디자이너와 바로 일할 수 있어요
           </pre>
         </div>
-        <div className="mt-[32px] w-[1200px] h-[440px] gap-5 flex justify-between items-center">
-          <div className="w-[386.67px] h-[440px] pt-[40px] px-6 rounded-[20px] bg-[#0000000A] flex flex-col items-start justify-start">
-            <div className="w-[338.67px] h-[148px] gap-2 flex flex-col justify-start items-start">
-              <p className="font-suit text-2xl font-extrabold leading-[33.6px] tracking-[-0.02em] text-[#795BF9] text-left">
+        <div className="mt-[32px] flex h-[440px] w-[1200px] items-center justify-between gap-5">
+          <div className="flex h-[440px] w-[386.67px] flex-col items-start justify-start rounded-[20px] bg-[#0000000A] px-6 pt-[40px]">
+            <div className="flex h-[148px] w-[338.67px] flex-col items-start justify-start gap-2">
+              <p className="text-left font-suit text-2xl font-extrabold leading-[33.6px] tracking-[-0.02em] text-[#795BF9]">
                 01
               </p>
-              <p className="font-suit text-2xl font-bold leading-[33.6px] tracking-[-0.02em] text-[#000000E5] text-left">
+              <p className="text-left font-suit text-2xl font-bold leading-[33.6px] tracking-[-0.02em] text-[#000000E5]">
                 기업 정보와 필요 업무 기입
               </p>
               <pre className="text-left font-suit text-xl font-normal leading-[32px] tracking-[-0.02em] text-[#000000CC]">
@@ -27,16 +27,20 @@ function HeroSection4() {
                 맞춤형 디자이너를 배정해요
               </pre>
             </div>
-            <div className="flex justify-center items-start mt-8 w-full h-full">
-              <img src="/img/box/section4-box1.png" alt="section4-box1" />
+            <div className="mt-8 flex h-full w-full items-start justify-center">
+              <img
+                src="/img/box/section4-box1.png"
+                alt="section4-box1"
+                className="h-[222px] w-[240px]"
+              />
             </div>
           </div>
-          <div className="w-[386.67px] h-[440px] pt-[40px] px-6 rounded-[20px] bg-[#0000000A] flex flex-col items-start justify-start">
-            <div className="w-[338.67px] h-[148px] gap-2 flex flex-col justify-start items-start">
-              <p className="font-suit text-2xl font-extrabold leading-[33.6px] tracking-[-0.02em] text-[#795BF9] text-left">
+          <div className="flex h-[440px] w-[386.67px] flex-col items-start justify-start rounded-[20px] bg-[#0000000A] px-6 pt-[40px]">
+            <div className="flex h-[148px] w-[338.67px] flex-col items-start justify-start gap-2">
+              <p className="text-left font-suit text-2xl font-extrabold leading-[33.6px] tracking-[-0.02em] text-[#795BF9]">
                 02
               </p>
-              <p className="font-suit text-2xl font-bold leading-[33.6px] tracking-[-0.02em] text-[#000000E5] text-left">
+              <p className="text-left font-suit text-2xl font-bold leading-[33.6px] tracking-[-0.02em] text-[#000000E5]">
                 업무 시간대와 시작일 선택
               </p>
               <pre className="text-left font-suit text-xl font-normal leading-[32px] tracking-[-0.02em] text-[#000000CC]">
@@ -45,16 +49,20 @@ function HeroSection4() {
                 원하는 날부터 진행이 가능해요
               </pre>
             </div>
-            <div className="flex justify-center items-start mt-8 w-full h-full">
-              <img src="/img/box/section4-box2.png" alt="section4-box2" />
+            <div className="mt-8 flex h-full w-full items-start justify-center">
+              <img
+                src="/img/box/section4-box2.png"
+                alt="section4-box2"
+                className="h-[222px] w-[240px]"
+              />
             </div>
           </div>
-          <div className="w-[386.67px] h-[440px] pt-[40px] px-6 rounded-[20px] bg-[#0000000A] flex flex-col items-start justify-start">
-            <div className="w-[338.67px] h-[148px] gap-2 flex flex-col justify-start items-start">
-              <p className="font-suit text-2xl font-extrabold leading-[33.6px] tracking-[-0.02em] text-[#795BF9] text-left">
+          <div className="flex h-[440px] w-[386.67px] flex-col items-start justify-start rounded-[20px] bg-[#0000000A] px-6 pt-[40px]">
+            <div className="flex h-[148px] w-[338.67px] flex-col items-start justify-start gap-2">
+              <p className="text-left font-suit text-2xl font-extrabold leading-[33.6px] tracking-[-0.02em] text-[#795BF9]">
                 03
               </p>
-              <p className="font-suit text-2xl font-bold leading-[33.6px] tracking-[-0.02em] text-[#000000E5] text-left">
+              <p className="text-left font-suit text-2xl font-bold leading-[33.6px] tracking-[-0.02em] text-[#000000E5]">
                 희망 디자이너 성향 선택
               </p>
               <pre className="text-left font-suit text-xl font-normal leading-[32px] tracking-[-0.02em] text-[#000000CC]">
@@ -63,8 +71,12 @@ function HeroSection4() {
                 스킬이 있다면 요청이 가능해요
               </pre>
             </div>
-            <div className="flex justify-center items-start mt-8 w-full h-full">
-              <img src="/img/box/section4-box3.png" alt="section4-box3" />
+            <div className="mt-8 flex h-full w-full items-start justify-center">
+              <img
+                src="/img/box/section4-box3.png"
+                alt="section4-box3"
+                className="h-[222px] w-[240px]"
+              />
             </div>
           </div>
         </div>

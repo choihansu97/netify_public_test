@@ -1,18 +1,18 @@
 function HeroSection() {
   return (
-    <section className="bg-hero-section-gradient w-full h-full">
-      <div className="min-h-[476px] min-w-[1440px] max-h-[476px] max-w-[1440px] mx-auto gap-[24px] flex flex-col justify-center items-center">
-        <article className="flex flex-col justify-center items-center w-full h-full gap-2">
-          <h1 className="font-suit font-normal text-[48px] leading-[1.35] text-center tracking-[-0.02em] text-white text-opacity-90">
+    <section className="h-full w-full bg-hero-section-gradient">
+      <div className="mx-auto flex max-h-[476px] min-h-[476px] min-w-[1440px] max-w-[1440px] flex-col items-center justify-center gap-[24px]">
+        <article className="flex h-full w-full flex-col items-center justify-center gap-2">
+          <h1 className="text-center font-suit text-[48px] font-normal leading-[1.35] tracking-[-0.02em] text-white text-opacity-90">
             좋은 디자이너를 찾아
             <br />
-            <span className="font-suit font-extrabold text-[48px] leading-[1.35] text-center tracking-[-0.02em] text-white">
+            <span className="text-center font-suit text-[48px] font-extrabold leading-[1.35] tracking-[-0.02em] text-white">
               헤매고 계셨다면
             </span>
           </h1>
-          <p className="font-suit font-normal text-[20px] leading-[1.6] tracking-[-0.02em] text-white text-opacity-90">
+          <p className="font-suit text-[20px] font-normal leading-[1.6] tracking-[-0.02em] text-white text-opacity-90">
             우리 기업에 딱! 맞는
-            <span className="font-suit font-bold text-[20px] leading-[32px] tracking-[-0.02em] text-white text-opacity-90">
+            <span className="font-suit text-[20px] font-bold leading-[32px] tracking-[-0.02em] text-white text-opacity-90">
               실력있고 성실한 전담 디자이너
             </span>
             를
@@ -20,14 +20,14 @@ function HeroSection() {
             직원처럼 쓸 수 있는 방법을 알려드릴게요
           </p>
         </article>
-        <article className="flex justify-center items-center w-full h-full gap-2">
-          <button className="w-[206px] h-[50px] px-6 py-3 bg-white rounded-lg">
-            <p className="font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-left bg-clip-text text-transparent bg-hero-button-gradient whitespace-nowrap">
+        <article className="flex h-full w-full items-center justify-center gap-2">
+          <button className="h-[50px] w-[206px] rounded-lg bg-white px-6 py-3">
+            <p className="whitespace-nowrap bg-hero-button-gradient bg-clip-text text-left font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-transparent">
               3일 무료! 디자이너 구독
             </p>
           </button>
-          <button className="px-6 py-3 w-[148px] h-[50px] bg-white bg-opacity-[0.16] rounded-lg">
-            <p className="font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-white whitespace-nowrap">
+          <button className="h-[50px] w-[148px] rounded-lg bg-white bg-opacity-[0.16] px-6 py-3">
+            <p className="whitespace-nowrap font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-white">
               24시 즉시 상담
             </p>
           </button>

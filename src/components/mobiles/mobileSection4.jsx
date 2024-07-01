@@ -1,47 +1,38 @@
-const SlideCard = ({step, title, description, imgSrc, imgAlt}) => (
-  <div
-    className="w-full max-w-[500px] h-auto pt-[40px] px-6 rounded-[20px] bg-[#0000000A] flex flex-col items-start justify-start">
-    <div
-      className="w-full max-w-[500px] gap-2 flex flex-col justify-start items-start">
-      <p
-        className="font-suit text-2xl font-extrabold leading-[28px] tracking-[-0.02em] text-[#795BF9] text-left">
+const SlideCard = ({ step, title, description, imgSrc, imgAlt }) => (
+  <div className="flex h-auto w-full max-w-[500px] flex-col items-start justify-start rounded-[20px] bg-[#0000000A] px-6 pt-[40px]">
+    <div className="flex w-full max-w-[500px] flex-col items-start justify-start gap-2">
+      <p className="text-left font-suit text-2xl font-extrabold leading-[28px] tracking-[-0.02em] text-[#795BF9]">
         {step}
       </p>
-      <p
-        className="font-suit text-2xl font-bold leading-[28px] tracking-[-0.02em] text-[#000000E5] text-left ">
+      <p className="text-left font-suit text-2xl font-bold leading-[28px] tracking-[-0.02em] text-[#000000E5]">
         {title}
       </p>
-      <pre
-        className="text-left font-suit text-smfont-normal leading-[28px] tracking-[-0.02em] text-[#000000CC] whitespace-break-spaces">
-                {description}
-            </pre>
+      <pre className="text-smfont-normal whitespace-break-spaces text-left font-suit leading-[28px] tracking-[-0.02em] text-[#000000CC]">
+        {description}
+      </pre>
     </div>
-    <div className="flex justify-center items-start mt-8 w-full h-full">
-      <img src={imgSrc} alt={imgAlt} loading={"lazy"}/>
+    <div className="mt-8 flex h-full w-full items-start justify-center">
+      <img src={imgSrc} alt={imgAlt} loading={'lazy'} />
     </div>
   </div>
 );
 
 function MobileSection4() {
   return (
-    <section className="w-full h-full bg-white">
-      <div
-        className="w-full h-auto mx-auto flex flex-col px-4 py-[48px]">
+    <section className="h-full w-full bg-white">
+      <div className="mx-auto flex h-auto w-full flex-col px-4 py-[48px]">
         <div className="flex flex-col items-center gap-2">
-          <p
-            className="text-left font-suit text-[16px] font-medium tracking-[-0.02em] text-[#000000CC]">
+          <p className="text-left font-suit text-[16px] font-medium tracking-[-0.02em] text-[#000000CC]">
             어떻게 가능한가요?
           </p>
-          <div
-            className="text-left font-suit text-[28px] font-bold leading-[36px] tracking-[-0.02em] text-[#000000E5] text-center">
+          <div className="text-left text-center font-suit text-[28px] font-bold leading-[36px] tracking-[-0.02em] text-[#000000E5]">
             간단한 신청서만 작성하면
-            <br/>
+            <br />
             디자이너와 바로 일할 수 있어요
           </div>
         </div>
 
-        <div
-          className="mt-5 w-full gap-5 flex flex-col justify-between items-center">
+        <div className="mt-5 flex w-full flex-col items-center justify-between gap-5">
           <SlideCard
             step="01"
             title="기업 정보와 필요 업무 기입"

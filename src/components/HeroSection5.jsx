@@ -1,22 +1,22 @@
 function HeroSection5() {
   return (
-    <section className="w-full h-full bg-section5-gradient-color">
-      <div className="h-[240px] w-[1440px] mx-auto flex justify-between items-center px-[120px] py-[71px]">
-        <h2 className="font-suit font-normal text-[36px] leading-[48.6px] tracking-[-0.02em] text-left text-white">
+    <section className="h-full w-full bg-section5-gradient-color">
+      <div className="mx-auto flex h-[240px] w-[1440px] items-center justify-between px-[120px] py-[71px]">
+        <h2 className="text-left font-suit text-[36px] font-normal leading-[48.6px] tracking-[-0.02em] text-white">
           이젠 직원보다 열심히 일하는
           <br />
-          <span className="font-suit font-bold text-[36px] leading-[48.6px] tracking-[-0.02em]">
+          <span className="font-suit text-[36px] font-bold leading-[48.6px] tracking-[-0.02em]">
             전담 디자이너와 함께 일하세요
           </span>
         </h2>
-        <div className="w-[328px] h-[50px] gap-2 flex items-center">
-          <button className="w-[172px] h-[50px] py-3 px-6 bg-[#FFFFFF] whitespace-nowrap">
-            <p className="font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-left text-section5-gradient-text bg-clip-text bg-section5-gradient-text">
+        <div className="flex h-[50px] w-[328px] items-center gap-2">
+          <button className="h-[50px] w-[172px] whitespace-nowrap bg-[#FFFFFF] px-6 py-3">
+            <p className="bg-section5-gradient-text bg-clip-text text-left font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-section5-gradient-text">
               지금 바로 구독하기
             </p>
           </button>
-          <button className="w-[148px] h-[50px] py-3 px-6 bg-[#FFFFFF33] whitespace-nowrap">
-            <p className="font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-left text-[#FFFFFF]">
+          <button className="h-[50px] w-[148px] whitespace-nowrap bg-[#FFFFFF33] px-6 py-3">
+            <p className="text-left font-suit text-[16px] font-bold leading-[26px] tracking-[0.45px] text-[#FFFFFF]">
               24시 즉시 상담
             </p>
           </button>
